@@ -11,7 +11,6 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
-  
 }
 
 .gallery {
@@ -25,4 +24,15 @@ body {
   flex-direction: row;
   margin-bottom: 48px;
   width: calc((100% - 48px) / 3);
+}
+
+#boxes {
+  display: flex;
+  flex-direction: column;
+}
+
+#boxes div {
+  width: 30px;
+  height: 30px;
+  margin: 4px;
 }
