@@ -24,6 +24,8 @@ body {
   flex-direction: row;
   margin-bottom: 48px;
   width: calc((100% - 48px) / 3);
+  width: 360px;
+  height: 300px;
 }
 
 #boxes {

@@ -11,13 +11,13 @@ loginForm.addEventListener("submit", (event) => {
   console.log(button);
 
   if (userEmail === "" || userPassword === "") {
-    return alert ("All form fields must be filled in");
+    return alert("All form fields must be filled in");
   } else {
     const result = {
       email: userEmail,
       password: userPassword,
     };
-    
+
     console.log(result);
     loginForm.reset();
   }
