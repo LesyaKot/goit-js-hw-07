@@ -1,4 +1,4 @@
-`use strict`;
+'use strict';
 
 const categoriesList = document.querySelectorAll("li.item");
 categoriesList.forEach((category) => {

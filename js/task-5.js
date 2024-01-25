@@ -1,4 +1,4 @@
-`use strict`;
+'use strict';
 
 const changeColorButton = document.querySelector(".change-color");
 const colorSpan = document.querySelector(".color");

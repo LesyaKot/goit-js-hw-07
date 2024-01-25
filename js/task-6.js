@@ -10,6 +10,8 @@ createBtn.addEventListener("click", createBoxes);
 destroyBtn.addEventListener("click", destroyBoxes);
 
 function createBoxes() {
+  destroyBoxes();
+
   const amount = Number(inputNumb.value);
 
   if (amount >= 1 && amount <= 100) {

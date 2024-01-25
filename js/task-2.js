@@ -1,3 +1,5 @@
+"use strict";
+
 const images = [
   {
     url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
@@ -25,16 +27,18 @@ const images = [
   },
 ];
 
-const galleryElements = document.querySelector(`.gallery`);
+function renderImages(images) {
 
-images.forEach((image) => {
-  const galleryItem = document.createElement(`li`);
-  galleryItem.classList.add(`gallery-item`);
+  let html = "";
+  
+  for (let image of images) {
+    html += `<li>
+      <img src="${image.url}" alt="${image.alt}" />
+    </li>`;
+  }
 
-  const galleryImage = document.createElement(`img`);
-  galleryImage.src = image.url;
-  galleryImage.alt = image.alt;
+  const gallery = document.querySelector(".gallery");
+  gallery.insertAdjacentHTML("beforeend", html);
+}
 
-  galleryItem.appendChild(galleryImage);
-  galleryElements.appendChild(galleryItem);
-});
+renderImages(images);
